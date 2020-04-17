@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".SkillActivity">
 
     <ImageView
         android:id="@+id/background"
@@ -18,8 +17,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/welcomescreenbg" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/beginnerballerbg" />
 
     <ImageView
         android:id="@+id/logo"
@@ -34,48 +33,63 @@
         app:srcCompat="@drawable/swooshlogo" />
 
     <TextView
-        android:id="@+id/goalltextview"
-        android:layout_width="wrap_content"
+        android:id="@+id/iamtext"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/montserrat"
-        android:text="@string/go_all_text"
+        android:text="@string/iam_text"
+        android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="46sp"
-        android:textStyle="bold"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
-    <TextView
-        android:id="@+id/ongoingtextview"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:text="@string/on_going_text"
-        android:textColor="@android:color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/goalltextview" />
+        app:layout_constraintTop_toBottomOf="@+id/iamtext">
 
-    <TextView
-        android:id="@+id/findtextview"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/montserrat"
-        android:singleLine="false"
-        android:text="@string/find_text"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ongoingtextview" />
+        <ToggleButton
+            android:id="@+id/beginnerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/swoosh_toggle"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/beginner_btn_text"
+            android:textColor="@android:color/white"
+            android:textOff="@string/beginner_btn_text"
+            android:textOn="@string/beginner_btn_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ToggleButton
+            android:id="@+id/ballerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/swoosh_toggle"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/baller_btn_text"
+            android:textColor="@android:color/white"
+            android:textOff="@string/baller_btn_text"
+            android:textOn="@string/baller_btn_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/getStartedButton"
+        android:id="@+id/finishButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -83,11 +97,11 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
-        android:text="@string/get_started_btn_text"
+        android:text="@string/finish_btn_text"
         android:textColor="@android:color/white"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

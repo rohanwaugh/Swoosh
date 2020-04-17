@@ -54,8 +54,11 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
+        android:onClick="launchSkillActivity"
         android:text="@string/next_btn_text"
         android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -80,7 +83,9 @@
             android:text="@string/mens_btn_text"
             android:textColor="@android:color/white"
             android:textOff="@string/mens_btn_text"
-            android:textOn="@string/mens_btn_text" />
+            android:textOn="@string/mens_btn_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <ToggleButton
             android:id="@+id/womentoggle"
@@ -93,7 +98,9 @@
             android:text="@string/womens_btn_text"
             android:textColor="@android:color/white"
             android:textOff="@string/womens_btn_text"
-            android:textOn="@string/womens_btn_text" />
+            android:textOn="@string/womens_btn_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <ToggleButton
             android:id="@+id/coedtoggle"
@@ -104,7 +111,9 @@
             android:text="@string/co_ed_btn_text"
             android:textColor="@android:color/white"
             android:textOff="@string/co_ed_btn_text"
-            android:textOn="@string/co_ed_btn_text" />
+            android:textOn="@string/co_ed_btn_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
