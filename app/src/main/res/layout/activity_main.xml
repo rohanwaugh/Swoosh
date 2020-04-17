@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ongoingtextview" />
 
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/getStartedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -86,8 +86,6 @@
         android:text="@string/get_started_btn_text"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:clickable="true"
-        android:focusable="true"
         app:layout_constraintBottom_toBottomOf="@+id/background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
