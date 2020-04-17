@@ -3,7 +3,12 @@
     <string name="go_all_text">GO ALL IN</string>
     <string name="on_going_text">ON GOING ALL OUT</string>
     <string name="find_text">Find a team in your city and dominate the league</string>
-    <string name="btn_text">GET STARTED</string>
+    <string name="get_started_btn_text">GET STARTED</string>
     <string name="background_content_description">Swoosh</string>
     <string name="logo_content_description">Swoosh Logo</string>
+    <string name="desired_league_text">Desired League:</string>
+    <string name="mens_btn_text">Mens</string>
+    <string name="womens_btn_text">Womens</string>
+    <string name="co_ed_btn_text">Co-ed</string>
+    <string name="next_btn_text">Next</string>
 </resources>
