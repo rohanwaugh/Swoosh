@@ -2,8 +2,8 @@ package com.android.swoosh.controller
 
 import android.os.Bundle
 import com.android.swoosh.R
-import com.android.swoosh.utilities.EXTRA_LEAGUE
-import com.android.swoosh.utilities.EXTRA_SKILL
+import com.android.swoosh.model.Player
+import com.android.swoosh.utilities.EXTRA_PLAYER
 import kotlinx.android.synthetic.main.activity_finish.*
 
 class FinishActivity : BaseActivity() {
@@ -12,9 +12,8 @@ class FinishActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finish)
 
-        val skill = intent.getStringExtra(EXTRA_SKILL)
-        val league = intent.getStringExtra(EXTRA_LEAGUE)
+        val player = intent.getParcelableExtra<Player>(EXTRA_PLAYER)
 
-        selectedLeaguesText.text = getString(R.string.selected_league_text,league,skill)
+        selectedLeaguesText.text = getString(R.string.selected_league_text,player?.league,player?.skill)
     }
 }
