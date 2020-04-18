@@ -1,9 +1,14 @@
-package com.android.swoosh
+package com.android.swoosh.controller
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.android.swoosh.*
+import com.android.swoosh.utilities.COED
+import com.android.swoosh.utilities.EXTRA_LEAGUE
+import com.android.swoosh.utilities.MEN
+import com.android.swoosh.utilities.WOMEN
 import kotlinx.android.synthetic.main.activity_league.*
 
 
@@ -40,7 +45,7 @@ class LeagueActivity : BaseActivity() {
             skillIntent.putExtra(EXTRA_LEAGUE,selectedLeague)
             startActivity(skillIntent)
         }else{
-            Toast.makeText(this,getString(R.string.toast_message),Toast.LENGTH_LONG).show()
+            Toast.makeText(this,getString(R.string.league_toast_message),Toast.LENGTH_LONG).show()
         }
     }
 

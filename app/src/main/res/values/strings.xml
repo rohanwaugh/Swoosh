@@ -15,5 +15,7 @@
     <string name="beginner_btn_text">Beginner</string>
     <string name="baller_btn_text">Baller</string>
     <string name="finish_btn_text">FINISH</string>
-    <string name="toast_message">Please select a league</string>
+    <string name="league_toast_message">Please select a league</string>
+    <string name="skill_toast_message">Please select a skill</string>
+    <string name="selected_league_text">Looking for a %1$s %2$s league near you….</string>
 </resources>
