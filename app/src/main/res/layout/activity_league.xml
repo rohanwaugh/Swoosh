@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -75,11 +74,12 @@
         app:layout_constraintTop_toBottomOf="@+id/desiredleague">
 
         <ToggleButton
-            android:id="@+id/mentoggle"
+            android:id="@+id/mentoggleBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="menToggleButtonClicked"
             android:text="@string/mens_btn_text"
             android:textColor="@android:color/white"
             android:textOff="@string/mens_btn_text"
@@ -88,13 +88,14 @@
             android:textStyle="bold" />
 
         <ToggleButton
-            android:id="@+id/womentoggle"
+            android:id="@+id/womentoggleBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="womenToggleButtonClicked"
             android:text="@string/womens_btn_text"
             android:textColor="@android:color/white"
             android:textOff="@string/womens_btn_text"
@@ -103,11 +104,12 @@
             android:textStyle="bold" />
 
         <ToggleButton
-            android:id="@+id/coedtoggle"
+            android:id="@+id/coedtoggleBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="coedToggleButtonClicked"
             android:text="@string/co_ed_btn_text"
             android:textColor="@android:color/white"
             android:textOff="@string/co_ed_btn_text"
