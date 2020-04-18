@@ -13,7 +13,7 @@ class FinishActivity : BaseActivity() {
         setContentView(R.layout.activity_finish)
 
         val player = intent.getParcelableExtra<Player>(EXTRA_PLAYER)
-
-        selectedLeaguesText.text = getString(R.string.selected_league_text,player?.league,player?.skill)
+        selectedLeaguesText.text =
+            getString(R.string.selected_league_text, player?.league, player?.skill)
     }
 }

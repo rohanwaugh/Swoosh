@@ -10,36 +10,36 @@ open class BaseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d(TAG,"${javaClass.simpleName} OnCreate")
+        Log.d(TAG, "${javaClass.simpleName} OnCreate")
     }
 
     override fun onStart() {
         super.onStart()
-        Log.d(TAG,"${javaClass.simpleName} OnStart")
+        Log.d(TAG, "${javaClass.simpleName} OnStart")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d(TAG,"${javaClass.simpleName} OnResume")
+        Log.d(TAG, "${javaClass.simpleName} OnResume")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d(TAG,"${javaClass.simpleName} OnPause")
+        Log.d(TAG, "${javaClass.simpleName} OnPause")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d(TAG,"${javaClass.simpleName} OnStop")
+        Log.d(TAG, "${javaClass.simpleName} OnStop")
     }
 
     override fun onRestart() {
         super.onRestart()
-        Log.d(TAG,"${javaClass.simpleName} OnRestart")
+        Log.d(TAG, "${javaClass.simpleName} OnRestart")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d(TAG,"${javaClass.simpleName} OnDestroy")
+        Log.d(TAG, "${javaClass.simpleName} OnDestroy")
     }
 }

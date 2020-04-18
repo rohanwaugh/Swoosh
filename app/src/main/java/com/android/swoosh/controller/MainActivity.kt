@@ -12,8 +12,10 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.activity_main)
 
         getStartedButton.setOnClickListener {
-            val leagueIntent = Intent(this,
-                LeagueActivity::class.java)
+            val leagueIntent = Intent(
+                this,
+                LeagueActivity::class.java
+            )
             startActivity(leagueIntent)
         }
     }

@@ -12,12 +12,24 @@ import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : BaseActivity() {
 
-    lateinit var player:Player
+    lateinit var player: Player
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_league)
         player = Player()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putParcelable(EXTRA_PLAYER, player)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if (savedInstanceState != null) {
+            player = savedInstanceState.getParcelable(EXTRA_PLAYER)!!
+        }
     }
 
     fun menToggleButtonClicked(view: View) {
@@ -41,10 +53,10 @@ class LeagueActivity : BaseActivity() {
     fun launchSkillActivity(view: View) {
         if (player.league.isNotEmpty()) {
             val skillIntent = Intent(this, SkillActivity::class.java)
-            skillIntent.putExtra(EXTRA_PLAYER,player)
+            skillIntent.putExtra(EXTRA_PLAYER, player)
             startActivity(skillIntent)
-        }else{
-            Toast.makeText(this,getString(R.string.league_toast_message),Toast.LENGTH_LONG).show()
+        } else {
+            Toast.makeText(this, getString(R.string.league_toast_message), Toast.LENGTH_LONG).show()
         }
     }
 
